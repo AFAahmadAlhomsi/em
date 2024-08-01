@@ -1,0 +1,116 @@
+body {
+    background: url(./img/برغر\ الواجهة.avif);
+    background-size: cover; /* Adjusted to cover the background */
+    font-family: sans-serif;
+}
+
+.login {
+    width: 450px;
+    height: 550px;
+    padding: 20px; /* Adjusted padding to ensure consistency */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.login img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 35px;
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.login h1 {
+    margin: 0;
+    padding: 20px;
+    color: rgb(250, 83, 6);
+    text-align: center;
+}
+
+.login label {
+    color: chartreuse;
+    font-weight: bold;
+}
+
+.login input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px; /* Add padding for better touch support */
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+}
+
+.login input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    background: peru;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: 0.5s ease;
+}
+
+.login input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.login a {
+    text-decoration: none;
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .login {
+        width: 90%; /* Make the form width responsive */
+        height: auto; /* Allow height to adjust automatically */
+        padding: 20px;
+    }
+
+    .login img {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px;
+        left: 50%; /* Center the image horizontally */
+        transform: translateX(-50%);
+    }
+
+    .login h1 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+
+    .login input[type="text"],
+    .login input[type="password"],
+    .login input[type="submit"] {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .login input[type="submit"] {
+        height: 35px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .login a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
